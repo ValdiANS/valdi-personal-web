@@ -1,0 +1,39 @@
+{
+  "title": "Experience",
+  "experiences": [
+    {
+      "logoUrl": "/assets/img/telkom-logo.png",
+      "companyName": "Telkom Indonesia",
+      "subcompanyName": "Digital Amoeba",
+      "role": "Front-End Web Developer",
+      "type": "Intenship",
+      "period": "Feb 2023 - Jun 2023 · 5 mos",
+      "location": "Bandung, West Java, Indonesia",
+      "description": "I work at Digital Amoeba. Digital Amoeba is a Corporate Innovation Lab by Telkom Indonesia that incubates and accelerates ideas from its employees which creates digital innovation and digital talents.",
+      "tasks": [
+        "Developed dynamic and responsive website UIs using React JS and React Bootstrap within the Next.js framework.",
+        "Integrated front-end interfaces with back-end systems through RESTful APIs.",
+        "Collaborated closely with stakeholders, back-end developers, UI/UX designers, and system analysts/quality assurance teams to ensure seamless project execution.",
+        "Engaged in bug-fixing and troubleshooting to maintain and improve application performance.",
+        "Created reusable components to streamline development processes and enhance code maintainability.",
+        "Applied agile methodologies, particularly the Scrum framework, for efficient project management and iterative development.",
+        "Conducted daily, weekly, and monthly meetings to discuss project progress, mentor team members, and report work status.",
+        "Achieved project goals and targets set by the project owner consistently."
+      ],
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Next.js",
+          "React JS",
+          "Redux Toolkit",
+          "React Bootstrap",
+          "SCSS",
+          "Git (Gitlab)"
+        ]
+      }
+    }
+  ]
+}

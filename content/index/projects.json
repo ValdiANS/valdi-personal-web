@@ -1,0 +1,101 @@
+{
+  "title": "Featured Projects",
+  "projects": [
+    {
+      "logoUrl": "/assets/img/medease-logo.png",
+      "name": "MedEase",
+      "subname": "Self-Medication App",
+      "role": "Android Developer",
+      "links": [
+        {
+          "caption": "GitHub",
+          "url": "https://github.com/frxcksz/MedEase"
+        }
+      ],
+      "description": "Innovative mobile application designed to revolutionize the way we approach medicine and its impact on our body. MedEase accurately predicts the name of medicine based on the text from the medicine package through OCR technology and it will offer users comprehensive information on various medicines and their properties.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": ["Kotlin", "Jetpack Compose", "Material Design 3"]
+      }
+    },
+
+    {
+      "logoUrl": "/assets/img/eventeer-logo.svg",
+      "name": "Eventeer",
+      "subname": "Event Management System",
+      "role": "Front-End Web Developer",
+      "links": [
+        {
+          "caption": "Website",
+          "url": "https://eventeer.id/"
+        }
+      ],
+      "description": "An event management platform that makes a solution for event organisers to manage events, venues, communities, collaborate, and find potential to learn together.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Next.js",
+          "React JS",
+          "Redux Toolkit",
+          "React Bootstrap",
+          "SCSS",
+          "Git (GitLab)"
+        ]
+      }
+    },
+
+    {
+      "logoUrl": "/assets/img/amoeba-logo.svg",
+      "name": "Landing Page Amoeba",
+      "subname": "Landing Page",
+      "role": "Front-End Web Developer",
+      "links": null,
+      "description": "Landing page for Digital Amoeba created as part of the internship's final project.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "Next.js",
+          "React JS",
+          "React Bootstrap",
+          "SCSS",
+          "Git (GitLab)",
+          "Framer Motion"
+        ]
+      }
+    },
+
+    {
+      "logoUrl": "/assets/img/laporku-logo.svg",
+      "name": "LaporKu",
+      "subname": "Forum (College Coursework)",
+      "role": "Full-Stack Web Developer",
+      "links": [
+        {
+          "caption": "Website",
+          "url": "https://laporku.netlify.app/"
+        },
+        {
+          "caption": "GitHub",
+          "url": "https://github.com/ValdiANS/laporku"
+        }
+      ],
+      "description": "A community forum designed to gather and manage reports about damage or disturbances to public facilities in Bandung City. The platform aims to enhance the reporting process through a user-friendly and interactive interface, allowing users to submit, view, respond to, and track reports related to their local environment.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "React JS",
+          "Redux Toolkit",
+          "React Router",
+          "Tailwind CSS",
+          "Node.js",
+          "Netlify Functions",
+          "Git (Github)",
+          "Cloud Firestore"
+        ]
+      }
+    }
+  ]
+}

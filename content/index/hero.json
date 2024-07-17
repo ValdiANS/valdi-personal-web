@@ -1,0 +1,31 @@
+{
+  "header": {
+    "name": "Rivaldi Agustinus",
+    "subtext": "Software Developer",
+    "description": "A passionate sofware engineering student in web development."
+  },
+  "position": {
+    "current": {
+      "caption": "CURRENT",
+      "description": {
+        "pre": "Undergraduate Software Engineering Student at ",
+        "linkText": {
+          "title": "Universitas Pendidikan Indonesia",
+          "url": "https://upi.edu/"
+        },
+        "post": "."
+      }
+    },
+    "past": {
+      "caption": "PAST",
+      "description": {
+        "pre": "Former intern at ",
+        "linkText": {
+          "title": "Digital Amoeba",
+          "url": "https://digitalamoeba.id/"
+        },
+        "post": ", a Corporate Innovation Lab by Telkom Indonesia"
+      }
+    }
+  }
+}

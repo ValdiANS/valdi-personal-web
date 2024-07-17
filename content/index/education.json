@@ -1,0 +1,29 @@
+{
+  "title": "Education",
+  "schools": [
+    {
+      "logoUrl": "/assets/img/upi-logo.png",
+      "name": "Indonesia University of Education",
+      "major": "Software Engineering",
+      "period": "2020 - 2024",
+      "grade": "GPA: 3.85 / 4.00",
+      "description": "Course: Programming Fundamentals (C++), Data Structure and Algorithms (C++), Database (SQL), Object-Oriented Programming (Java), Human-Computer Interaction, Web Programming (HTML, CSS, JavaScript, PHP, MySQL), etc."
+    },
+    {
+      "logoUrl": "/assets/img/bangkit-logo.png",
+      "name": "Bangkit Academy",
+      "major": "Mobile Development (Android)",
+      "period": "2023",
+      "grade": "Graduate with distinction (top 10%)",
+      "description": "Bangkit is designed to prepare students with in-demand skills and tech certifications, the Bangkit curriculum offers 3 interdisciplinary learning paths - machine learning, mobile development, and cloud computing. By the end of this program, students will be equipped with the tech expertise, soft skills, and English proficiency they need to transit from academia to the workplace and succeed at leading companies."
+    },
+    {
+      "logoUrl": "/assets/img/smkn13-logo.png",
+      "name": "Vocational High School 13 Bandung",
+      "major": "Computer Network Engineering",
+      "period": "2017 - 2020",
+      "grade": null,
+      "description": "Activities: D'Techno (tech community)"
+    }
+  ]
+}
