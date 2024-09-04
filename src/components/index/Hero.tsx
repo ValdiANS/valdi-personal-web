@@ -39,7 +39,7 @@ const Hero = () => {
 
           {/* <p className='mt-4 text-lg'>{heroContent.header.description}</p> */}
           <p className='mt-4 text-lg'>
-            A passionate software engineering student in{' '}
+            A passionate software engineering fresh graduate in{' '}
             <TypeAnimation
               sequence={[
                 'web',
@@ -67,7 +67,6 @@ const Hero = () => {
             animate={{
               opacity: 0,
               transform: 'translateX(100%)',
-              transitionDuration: '2s',
             }}
             whileInView={{
               opacity: 1,
@@ -115,7 +114,6 @@ const Hero = () => {
             animate={{
               opacity: 0,
               transform: 'translateX(-100%)',
-              transitionDuration: '2s',
             }}
             whileInView={{
               opacity: 1,
