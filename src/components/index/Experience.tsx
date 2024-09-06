@@ -6,7 +6,7 @@ const Experience = () => {
     <section id='experience' className='pt-4'>
       <h2 className='text-5xl font-extrabold'>{experienceContent.title}</h2>
 
-      <div className='flex flex-col my-24'>
+      <div className='flex flex-col my-24 gap-y-4'>
         {experienceContent.experiences.map((experience, idx) => (
           <ExperienceItem key={idx} {...experience} />
         ))}

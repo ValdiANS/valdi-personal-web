@@ -14,9 +14,9 @@ interface ExperienceProps {
   type: string;
   period: string;
   location: string;
-  description: string;
+  description: string | null;
   tasks: string[];
-  techStack: { caption: string; stacks: string[] };
+  techStack: { caption: string; stacks: string[] } | null;
 }
 
 const experienceItemVariant = {
@@ -82,28 +82,38 @@ const ExperienceItem = ({
         <Divider />
 
         <CardBody>
-          <p>{description}</p>
-          <br />
+          {description && (
+            <>
+              <p>{description}</p>
+              <br />
+            </>
+          )}
+
           <ul className='px-8 list-disc'>
             {tasks.map((task, idx) => (
               <li key={idx}>{task}</li>
             ))}
           </ul>
-          <br />
-          <div className='flex items-center gap-2 flex-wrap'>
-            <span>{techStack.caption}</span>
 
-            {techStack.stacks.map((tech, idx) => (
-              <Card
-                key={idx}
-                shadow='none'
-                isPressable={true}
-                className='h-8 px-4 flex justify-center bg-transparent rounded-full border border-solid border-black/20'
-              >
-                <span className='text-base'>{tech}</span>
-              </Card>
-            ))}
-          </div>
+          {techStack && (
+            <>
+              <br />
+              <div className='flex items-center gap-2 flex-wrap'>
+                <span>{techStack.caption}</span>
+
+                {techStack.stacks.map((tech, idx) => (
+                  <Card
+                    key={idx}
+                    shadow='none'
+                    isPressable={true}
+                    className='h-8 px-4 flex justify-center bg-transparent rounded-full border border-solid border-black/20'
+                  >
+                    <span className='text-base'>{tech}</span>
+                  </Card>
+                ))}
+              </div>
+            </>
+          )}
         </CardBody>
 
         <Divider />
