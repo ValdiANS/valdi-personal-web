@@ -6,7 +6,7 @@
       "companyName": "Telkom Indonesia",
       "subcompanyName": "Digital Amoeba",
       "role": "Front-End Web Developer",
-      "type": "Intenship",
+      "type": "Internship",
       "period": "Feb 2023 - Jun 2023 · 5 mos",
       "location": "Bandung, West Java, Indonesia",
       "description": "I work at Digital Amoeba. Digital Amoeba is a Corporate Innovation Lab by Telkom Indonesia that incubates and accelerates ideas from its employees which creates digital innovation and digital talents.",
@@ -34,6 +34,25 @@
           "Git (Gitlab)"
         ]
       }
+    },
+
+    {
+      "logoUrl": "/assets/img/len-logo.png",
+      "companyName": "PT Len Industri (Persero)",
+      "subcompanyName": null,
+      "role": "IT Support Technician",
+      "type": "Internship",
+      "period": "Jul 2019 - Sep 2019 · 3 mos",
+      "location": "Bandung, West Java, Indonesia",
+      "description": null,
+      "tasks": [
+        "Installing software in end-user (employees) computers.",
+        "Do user computer maintenance.",
+        "Configuring computer network configuration.",
+        "Installing LAN cable.",
+        "Assembling hardware components."
+      ],
+      "techStack": null
     }
   ]
 }
