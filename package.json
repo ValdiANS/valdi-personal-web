@@ -1,5 +1,5 @@
 {
-  "name": "vald-personal-web",
+  "name": "valdi-personal-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,8 +12,12 @@
   "dependencies": {
     "@motionone/utils": "^10.18.0",
     "@nextui-org/react": "^2.4.2",
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/zoom": "^3.12.0",
     "framer-motion": "^11.0.23",
     "next": "14.1.4",
+    "pdfjs-dist": "^3.4.120",
+    "raw-loader": "^4.0.2",
     "react": "^18",
     "react-dom": "^18",
     "react-type-animation": "^3.2.0"
