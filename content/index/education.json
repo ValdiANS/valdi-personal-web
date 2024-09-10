@@ -11,6 +11,7 @@
     },
     {
       "logoUrl": "/assets/img/bangkit-logo.png",
+      "certificateUrl": "/assets/pdf/bangkit-academy-certificate.pdf",
       "name": "Bangkit Academy",
       "major": "Mobile Development (Android)",
       "period": "2023",

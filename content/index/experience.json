@@ -3,6 +3,7 @@
   "experiences": [
     {
       "logoUrl": "/assets/img/telkom-logo.png",
+      "certificateUrl": "/assets/pdf/internship-certificate-pt-telkom-indonesia-persero-tbk.pdf",
       "companyName": "Telkom Indonesia",
       "subcompanyName": "Digital Amoeba",
       "role": "Front-End Web Developer",
@@ -38,6 +39,7 @@
 
     {
       "logoUrl": "/assets/img/len-logo.png",
+      "certificateUrl": "/assets/pdf/internship-certificate-pt-len-industri-persero.pdf",
       "companyName": "PT Len Industri (Persero)",
       "subcompanyName": null,
       "role": "IT Support Technician",
