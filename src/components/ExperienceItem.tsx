@@ -5,9 +5,14 @@ import { motion } from 'framer-motion';
 import { Card, CardBody, CardHeader } from '@nextui-org/card';
 import { Image } from '@nextui-org/image';
 import { Divider } from '@nextui-org/divider';
+import { Button } from '@nextui-org/button';
+import { useDisclosure } from '@nextui-org/modal';
+
+import Modal from './Modal';
 
 interface ExperienceProps {
   logoUrl: string;
+  certificateUrl?: string;
   companyName: string;
   subcompanyName: string | null;
   role: string;
@@ -26,6 +31,7 @@ const experienceItemVariant = {
 
 const ExperienceItem = ({
   logoUrl,
+  certificateUrl,
   companyName,
   subcompanyName,
   role,
@@ -36,6 +42,9 @@ const ExperienceItem = ({
   tasks,
   techStack,
 }: ExperienceProps) => {
+  const control = useDisclosure();
+  const { onOpen } = control;
+
   return (
     <motion.article
       initial={false}
@@ -69,14 +78,35 @@ const ExperienceItem = ({
                 )}
               </h3>
               <p className='font-medium'>
-                {role} • {type}
-                <br />
-                <span className='text-sm opacity-70'>{location}</span>
+                {role} • <u>{type}</u>
               </p>
+
+              {certificateUrl && (
+                <>
+                  <Button
+                    color='default'
+                    variant='bordered'
+                    onPress={onOpen}
+                    className='mt-2'
+                  >
+                    Certificate
+                  </Button>
+
+                  <Modal
+                    control={control}
+                    title={companyName}
+                    pdfUrl={certificateUrl}
+                  />
+                </>
+              )}
             </div>
           </div>
 
-          <span className='text-sm uppercase tracking-widest'>{period}</span>
+          <div className='sm:text-right'>
+            <span className='text-sm uppercase tracking-widest'>{period}</span>
+            <br />
+            <span className='text-sm opacity-70'>{location}</span>
+          </div>
         </CardHeader>
 
         <Divider />
