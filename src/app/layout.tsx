@@ -4,6 +4,10 @@ import { Inter } from 'next/font/google';
 
 import '../styles/globals.css';
 
+// Import the styles provided by the react-pdf-viewer packages
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/zoom/lib/styles/index.css';
+
 import Providers from './provider';
 
 const inter = Inter({
