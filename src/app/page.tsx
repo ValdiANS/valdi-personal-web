@@ -1,3 +1,7 @@
+'use client';
+
+import { Worker } from '@react-pdf-viewer/core';
+
 import Navbar from 'src/components/NavBar';
 import Hero from 'src/components/index/Hero';
 import FeaturedProjects from 'src/components/index/FeaturedProjects';
@@ -7,24 +11,26 @@ import Contact from 'src/components/index/Contact';
 
 export default function Home() {
   return (
-    <div className='w-full min-h-screen flex flex-col items-center mx-auto'>
-      <Navbar />
+    <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js'>
+      <div className='w-full min-h-screen flex flex-col items-center mx-auto'>
+        <Navbar />
 
-      <div className='w-full overflow-x-hidden'>
-        <div className='w-full max-w-5xl mx-auto px-4 xl:px-0'>
-          <main className='w-full'>
-            <Hero />
+        <div className='w-full overflow-x-hidden'>
+          <div className='w-full max-w-5xl mx-auto px-4 xl:px-0'>
+            <main className='w-full'>
+              <Hero />
 
-            <FeaturedProjects />
+              <FeaturedProjects />
 
-            <Education />
+              <Education />
 
-            <Experience />
+              <Experience />
 
-            <Contact />
-          </main>
+              <Contact />
+            </main>
+          </div>
         </div>
       </div>
-    </div>
+    </Worker>
   );
 }
