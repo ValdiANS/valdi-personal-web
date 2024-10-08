@@ -5,13 +5,23 @@ import { motion } from 'framer-motion';
 import { Card, CardBody, CardHeader, CardFooter } from '@nextui-org/card';
 import { Image } from '@nextui-org/image';
 import { Link } from '@nextui-org/link';
+import { Button, Tooltip } from '@nextui-org/react';
+import { Icon } from '@iconify/react';
+
+import { ICON_MAPPER } from 'src/utils/util';
 
 interface ProjectItemProps {
   logoUrl: string;
   name: string;
   subname: string;
   role: string;
-  links: { caption: string; url: string }[] | null;
+  links:
+    | {
+        caption: string;
+        url: string | undefined;
+        visibility: 'public' | 'private';
+      }[]
+    | null;
   description: string | null;
   techStack: {
     caption: string;
@@ -77,18 +87,53 @@ const ProjectItem = ({
             </div>
 
             {links && (
-              <div className='flex items-start'>
-                {links.map(({ caption, url }, idx) => (
-                  <Link
-                    key={idx}
-                    href={url}
-                    color='foreground'
-                    underline='always'
-                    isExternal
-                    showAnchorIcon
-                  >
-                    {caption}
-                  </Link>
+              <div className='flex flex-wrap items-start justify-end gap-2 sm:flex-nowrap '>
+                {links.map(({ caption, url, visibility }, idx) => (
+                  <div key={idx}>
+                    {visibility === 'private' && (
+                      <Tooltip
+                        content={visibility}
+                        color='danger'
+                        showArrow={true}
+                        placement='bottom'
+                        className='capitalize'
+                      >
+                        <Button
+                          as={Link}
+                          disabled
+                          className='px-2 cursor-not-allowed'
+                        >
+                          <Icon
+                            icon={ICON_MAPPER[caption.toLowerCase()]}
+                            className='w-5 h-5'
+                          />
+
+                          {caption}
+
+                          <Icon
+                            icon={ICON_MAPPER['lock']}
+                            className='w-5 h-5'
+                          />
+                        </Button>
+                      </Tooltip>
+                    )}
+
+                    {visibility !== 'private' && (
+                      <Button
+                        href={url}
+                        as={Link}
+                        isExternal
+                        showAnchorIcon
+                        className='px-2'
+                      >
+                        <Icon
+                          icon={ICON_MAPPER[caption.toLowerCase()]}
+                          className='w-5 h-5'
+                        />
+                        {caption}
+                      </Button>
+                    )}
+                  </div>
                 ))}
               </div>
             )}
@@ -120,4 +165,5 @@ const ProjectItem = ({
   );
 };
 
+export type { ProjectItemProps };
 export default ProjectItem;
