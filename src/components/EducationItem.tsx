@@ -1,7 +1,8 @@
 import { Card, CardBody } from '@nextui-org/card';
-import { Button } from '@nextui-org/button';
 import { Image } from '@nextui-org/image';
 import { useDisclosure } from '@nextui-org/modal';
+
+import Button from './base/Button';
 import Modal from './Modal';
 
 interface EducationProps {
@@ -48,7 +49,7 @@ const EducationItem = ({
 
             {certificateUrl && (
               <div className='w-fit'>
-                <Button color='default' variant='bordered' onPress={onOpen}>
+                <Button color='default' variant='ghost' onPress={onOpen}>
                   Certificate
                 </Button>
 

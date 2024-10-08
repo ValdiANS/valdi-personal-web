@@ -6,8 +6,8 @@ import {
   ModalFooter,
   useDisclosure,
 } from '@nextui-org/modal';
-import { Button } from '@nextui-org/button';
 
+import Button from './base/Button';
 import PdfViewer from './PdfViewer';
 
 interface ModalProps {
