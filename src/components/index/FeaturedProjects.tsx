@@ -2,7 +2,7 @@ import { Link } from '@nextui-org/link';
 import { Button } from '@nextui-org/button';
 
 import projectsContent from '@/content/index/projects.json';
-import ProjectItem from '../ProjectItem';
+import ProjectItem, { ProjectItemProps } from '../ProjectItem';
 
 const FeaturedProjects = () => {
   return (
@@ -12,7 +12,7 @@ const FeaturedProjects = () => {
       <div className='flex flex-col items-center gap-8 my-24'>
         <div className='flex flex-col gap-8'>
           {projectsContent.projects.map((project, idx) => (
-            <ProjectItem key={idx} {...project} />
+            <ProjectItem key={idx} {...(project as ProjectItemProps)} />
           ))}
         </div>
 
