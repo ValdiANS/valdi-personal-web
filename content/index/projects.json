@@ -9,7 +9,8 @@
       "links": [
         {
           "caption": "GitHub",
-          "url": "https://github.com/frxcksz/MedEase"
+          "url": "https://github.com/frxcksz/MedEase",
+          "visibility": "public"
         }
       ],
       "description": "Innovative mobile application designed to revolutionize the way we approach medicine and its impact on our body. MedEase accurately predicts the name of medicine based on the text from the medicine package through OCR technology and it will offer users comprehensive information on various medicines and their properties.",
@@ -26,8 +27,13 @@
       "role": "Front-End Web Developer",
       "links": [
         {
+          "caption": "GitLab",
+          "visibility": "private"
+        },
+        {
           "caption": "Website",
-          "url": "https://eventeer.id/"
+          "url": "https://eventeer.id/",
+          "visibility": "public"
         }
       ],
       "description": "An event management platform that makes a solution for event organisers to manage events, venues, communities, collaborate, and find potential to learn together.",
@@ -52,7 +58,12 @@
       "name": "Landing Page Amoeba",
       "subname": "Landing Page",
       "role": "Front-End Web Developer",
-      "links": null,
+      "links": [
+        {
+          "caption": "GitLab",
+          "visibility": "private"
+        }
+      ],
       "description": "Landing page for Digital Amoeba created as part of the internship's final project.",
       "techStack": {
         "caption": "Tech Used:",
@@ -75,11 +86,13 @@
       "links": [
         {
           "caption": "Website",
-          "url": "https://laporku.netlify.app/"
+          "url": "https://laporku.netlify.app/",
+          "visibility": "public"
         },
         {
           "caption": "GitHub",
-          "url": "https://github.com/ValdiANS/laporku"
+          "url": "https://github.com/ValdiANS/laporku",
+          "visibility": "public"
         }
       ],
       "description": "A community forum designed to gather and manage reports about damage or disturbances to public facilities in Bandung City. The platform aims to enhance the reporting process through a user-friendly and interactive interface, allowing users to submit, view, respond to, and track reports related to their local environment.",
