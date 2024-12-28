@@ -2,13 +2,35 @@
   "title": "Experience",
   "experiences": [
     {
+      "logoUrl": "/assets/img/mekari-logo.png",
+      "certificateUrl": null,
+      "companyName": "PT Mid Solusi Nusantara (Mekari)",
+      "subcompanyName": null,
+      "role": "Solution Implementor (No Code/Low Code Developer)",
+      "type": "Full-time",
+      "period": "Nov 2024 - Present",
+      "location": "Jakarta, Indonesia",
+      "description": null,
+      "tasks": [
+        "Developed web applications using OOS (Officeless Operating System) platform.",
+        "Worked together with System Analyst to develop web applications.",
+        "Configuring computer network configuration.",
+        "Engaged in debugging and fixing issues"
+      ],
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": ["JavaScript", "OOS (Officeless Operating Platform)"]
+      }
+    },
+
+    {
       "logoUrl": "/assets/img/telkom-logo.png",
       "certificateUrl": "/assets/pdf/internship-certificate-pt-telkom-indonesia-persero-tbk.pdf",
       "companyName": "Telkom Indonesia",
       "subcompanyName": "Digital Amoeba",
       "role": "Front-End Web Developer",
       "type": "Internship",
-      "period": "Feb 2023 - Jun 2023 · 5 mos",
+      "period": "Feb 2023 - Jun 2023",
       "location": "Bandung, West Java, Indonesia",
       "description": "I work at Digital Amoeba. Digital Amoeba is a Corporate Innovation Lab by Telkom Indonesia that incubates and accelerates ideas from its employees which creates digital innovation and digital talents.",
       "tasks": [
@@ -45,7 +67,7 @@
       "subcompanyName": null,
       "role": "IT Support Technician",
       "type": "Internship",
-      "period": "Jul 2019 - Sep 2019 · 3 mos",
+      "period": "Jul 2019 - Sep 2019",
       "location": "Bandung, West Java, Indonesia",
       "description": null,
       "tasks": [
