@@ -60,14 +60,14 @@ const ExperienceItem = ({
       }}
     >
       <Card as='article' shadow='none' className='bg-primary '>
-        <CardHeader className='flex flex-col justify-between items-start gap-2 sm:flex-row'>
-          <div className='flex flex-col items-start gap-4 sm:flex-row sm:items-center'>
-            <Image
-              src={logoUrl}
-              alt={`${companyName} Logo`}
-              className='h-full max-h-[80px] w-full max-w-[240px]'
-            />
+        <CardHeader className='flex flex-col justify-between items-start gap-4'>
+          <Image
+            src={logoUrl}
+            alt={`${companyName} Logo`}
+            className='h-full max-h-[80px] w-full max-w-[240px]'
+          />
 
+          <div className='w-full flex flex-col justify-between items-start gap-2 sm:flex-row'>
             <div>
               <h3 className='text-2xl font-semibold'>
                 {companyName}{' '}
@@ -100,12 +100,14 @@ const ExperienceItem = ({
                 </>
               )}
             </div>
-          </div>
 
-          <div className='sm:text-right'>
-            <span className='text-sm uppercase tracking-widest'>{period}</span>
-            <br />
-            <span className='text-sm opacity-70'>{location}</span>
+            <div className='sm:text-right'>
+              <span className='text-sm uppercase tracking-widest'>
+                {period}
+              </span>
+              <br />
+              <span className='text-sm opacity-70'>{location}</span>
+            </div>
           </div>
         </CardHeader>
 
