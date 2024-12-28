@@ -12,7 +12,7 @@ import Modal from './Modal';
 
 interface ExperienceProps {
   logoUrl: string;
-  certificateUrl?: string;
+  certificateUrl?: string | null;
   companyName: string;
   subcompanyName: string | null;
   role: string;
