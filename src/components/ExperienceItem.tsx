@@ -11,12 +11,12 @@ import Button from './base/Button';
 import Modal from './Modal';
 
 interface ExperienceProps {
-  logoUrl: string;
+  logoUrl: string | null;
   certificateUrl?: string | null;
   companyName: string;
   subcompanyName: string | null;
   role: string;
-  type: string;
+  type: string | null;
   period: string;
   location: string;
   description: string | null;
@@ -61,11 +61,13 @@ const ExperienceItem = ({
     >
       <Card as='article' shadow='none' className='bg-primary '>
         <CardHeader className='flex flex-col justify-between items-start gap-4'>
-          <Image
-            src={logoUrl}
-            alt={`${companyName} Logo`}
-            className='h-full max-h-[80px] w-full max-w-[240px]'
-          />
+          {logoUrl && (
+            <Image
+              src={logoUrl}
+              alt={`${companyName} Logo`}
+              className='h-full max-h-[80px] w-full max-w-[240px]'
+            />
+          )}
 
           <div className='w-full flex flex-col justify-between items-start gap-2 sm:flex-row'>
             <div>
@@ -78,7 +80,12 @@ const ExperienceItem = ({
                 )}
               </h3>
               <p className='font-medium'>
-                {role} • <u>{type}</u>
+                {role}{' '}
+                {type && (
+                  <>
+                    • <u>{type}</u>
+                  </>
+                )}
               </p>
 
               {certificateUrl && (
