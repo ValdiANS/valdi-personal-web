@@ -24,6 +24,37 @@
     },
 
     {
+      "logoUrl": null,
+      "certificateUrl": null,
+      "companyName": "Freelance",
+      "subcompanyName": null,
+      "role": "Front-end Developer",
+      "type": "Part-time",
+      "period": "Oct 2024 - Present",
+      "location": "Jakarta, Indonesia",
+      "description": null,
+      "tasks": [
+        "Developed dynamic and responsive website UIs using React JS and React Bootstrap with Next.js framework.",
+        "Integrated front-end interfaces with Strapi.",
+        "Collaborated closely with UI/UX designer.",
+        "Engaged in debugging and fixing issues."
+      ],
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Next.js",
+          "React JS",
+          "Bootstrap",
+          "SCSS",
+          "Git (GitLab)  "
+        ]
+      }
+    },
+
+    {
       "logoUrl": "/assets/img/telkom-logo.png",
       "certificateUrl": "/assets/pdf/internship-certificate-pt-telkom-indonesia-persero-tbk.pdf",
       "companyName": "Telkom Indonesia",
