@@ -2,6 +2,35 @@
   "title": "Experience",
   "experiences": [
     {
+      "logoUrl": "/assets/img/mbu-group-logo.jpg",
+      "certificateUrl": null,
+      "companyName": "MBU Group",
+      "subcompanyName": null,
+      "role": "Software Engineer",
+      "type": "Full-time",
+      "period": "Jul 2025 - Present",
+      "location": "Bandung, West Java, Indonesia",
+      "description": null,
+      "tasks": [],
+      "techStack": {
+        "caption": "Skills:",
+        "stacks": [
+          "Software Development",
+          "TypeScript",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Laravel",
+          "Storybook",
+          "Web Development"
+        ]
+      }
+    },
+
+    {
       "logoUrl": "/assets/img/mekari-logo.png",
       "certificateUrl": null,
       "companyName": "PT Mid Solusi Nusantara (Mekari)",
@@ -9,7 +38,7 @@
       "role": "Solution Engineer 1",
       "type": "Full-time",
       "period": "Nov 2024 - Jun 2025",
-      "location": "Jakarta, Indonesia",
+      "location": "South Jakarta, Indonesia",
       "description": null,
       "tasks": [
         "Developed web applications using OOS (Officeless Operating System) platform.",
@@ -34,7 +63,6 @@
       "description": null,
       "tasks": [
         "Developed dynamic and responsive website UIs using React JS and React Bootstrap with Next.js framework.",
-        "Integrated front-end interfaces with Strapi.",
         "Collaborated closely with UI/UX designer.",
         "Engaged in debugging and fixing issues."
       ],
