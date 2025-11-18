@@ -128,15 +128,17 @@ const ExperienceItem = ({
             </>
           )}
 
-          <ul className='px-8 list-disc'>
-            {tasks.map((task, idx) => (
-              <li key={idx}>{task}</li>
-            ))}
-          </ul>
+          {tasks.length > 0 && (
+            <ul className='px-8 list-disc'>
+              {tasks.map((task, idx) => (
+                <li key={idx}>{task}</li>
+              ))}
+            </ul>
+          )}
 
           {techStack && (
             <>
-              <br />
+              {tasks.length > 0 && <br />}
               <div className='flex items-center gap-2 flex-wrap'>
                 <span>{techStack.caption}</span>
 
