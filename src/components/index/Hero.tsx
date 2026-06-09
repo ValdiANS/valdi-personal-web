@@ -39,7 +39,7 @@ const Hero = () => {
 
           {/* <p className='mt-4 text-lg'>{heroContent.header.description}</p> */}
           <p className='mt-4 text-lg'>
-            A passionate software engineering fresh graduate in{' '}
+            A passionate software engineer in{' '}
             <TypeAnimation
               sequence={[
                 'web',
