@@ -1,6 +1,6 @@
 {
   "header": {
-    "name": "Rivaldi Agustinus",
+    "name": "Hi there 👋, I'm Rivaldi",
     "subtext": "Software Developer",
     "description": "A passionate software fresh graduate in web development."
   },
@@ -8,10 +8,10 @@
     "current": {
       "caption": "CURRENT",
       "description": {
-        "pre": "Fresh Graduates in Software Engineering from ",
+        "pre": "Software engineer at ",
         "linkText": {
-          "title": "Universitas Pendidikan Indonesia",
-          "url": "https://upi.edu/"
+          "title": "MBU Group",
+          "url": "https://mbugroup.id/"
         },
         "post": "."
       }
@@ -19,12 +19,12 @@
     "past": {
       "caption": "PAST",
       "description": {
-        "pre": "Former intern at ",
+        "pre": "Former Solution Engineer at ",
         "linkText": {
-          "title": "Digital Amoeba",
-          "url": "https://digitalamoeba.id/"
+          "title": "Mekari",
+          "url": "https://mekari.com/en/"
         },
-        "post": ", a Corporate Innovation Lab by Telkom Indonesia"
+        "post": "."
       }
     }
   }

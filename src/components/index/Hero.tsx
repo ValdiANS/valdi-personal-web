@@ -32,10 +32,10 @@ const Hero = () => {
           }}
           className='text-center mt-8 sm:m-0'
         >
-          <h1 className='text-5xl font-extrabold mb-4'>
+          <h1 className='text-4xl font-extrabold mb-4'>
             {heroContent.header.name}
           </h1>
-          <p className='text-4xl font-bold'>{heroContent.header.subtext}</p>
+          {/* <p className='text-4xl font-bold'>{heroContent.header.subtext}</p> */}
 
           {/* <p className='mt-4 text-lg'>{heroContent.header.description}</p> */}
           <p className='mt-4 text-lg'>
@@ -43,8 +43,6 @@ const Hero = () => {
             <TypeAnimation
               sequence={[
                 'web',
-                2500,
-                'mobile',
                 2500,
                 'front-end',
                 2500,
