@@ -6,6 +6,7 @@ import { Icon } from '@iconify/react';
 import { Link } from '@nextui-org/react';
 
 import socials from '@/content/index/social.json';
+import SectionHeading from '../base/SectionHeading';
 
 const contactVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -27,7 +28,7 @@ const Contact = () => {
           margin: '0px 0px 0px -128px',
         }}
       >
-        <h2 className='text-5xl font-extrabold'>Let&apos;s Get in Touch</h2>
+        <SectionHeading index='04' title="Let's Get in Touch" />
 
         <div className='mt-16 flex flex-col gap-2'>
           {socials.map((social, idx) => (

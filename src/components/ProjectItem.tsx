@@ -43,6 +43,9 @@ const ProjectItem = ({
   description,
   techStack,
 }: ProjectItemProps) => {
+  const hasPublicLink =
+    links?.some((link) => link.visibility === 'public') ?? false;
+
   return (
     <motion.article
       initial={false}
@@ -59,18 +62,34 @@ const ProjectItem = ({
     >
       <Card
         shadow='none'
-        className='bg-primary border border-solid border-black/20'
+        className={`bg-primary border border-solid border-black/20 ${
+          hasPublicLink ? '' : 'opacity-80'
+        }`}
       >
-        <CardHeader className='w-full p-4 flex flex-col items-start gap-4 sm:flex-row xs:items-center'>
+        <CardHeader
+          className={`w-full flex flex-col items-start gap-4 sm:flex-row xs:items-center ${
+            hasPublicLink ? 'p-4' : 'p-3'
+          }`}
+        >
           <Image
             src={logoUrl}
             alt={`${name} Logo`}
-            className='h-full max-h-[80px] w-full max-w-[240px]'
+            className={
+              hasPublicLink
+                ? 'h-full max-h-[80px] w-full max-w-[240px]'
+                : 'h-full max-h-[56px] w-full max-w-[160px]'
+            }
           />
 
           <div className='w-full flex flex-col justify-between gap-4 sm:flex-row'>
             <div>
-              <h3 className='text-2xl font-bold'>
+              <h3
+                className={
+                  hasPublicLink
+                    ? 'text-2xl font-bold'
+                    : 'text-xl font-semibold'
+                }
+              >
                 {name}{' '}
                 <span className='text-lg font-normal'>
                   {subname && (

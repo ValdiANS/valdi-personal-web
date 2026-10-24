@@ -59,7 +59,7 @@ const ExperienceItem = ({
         once: true,
       }}
     >
-      <Card as='article' shadow='none' className='bg-primary '>
+      <Card as='article' shadow='none' className='pl-4 bg-primary'>
         <CardHeader className='flex flex-col justify-between items-start gap-4'>
           {logoUrl && (
             <Image
@@ -156,8 +156,6 @@ const ExperienceItem = ({
             </>
           )}
         </CardBody>
-
-        <Divider />
       </Card>
     </motion.article>
   );

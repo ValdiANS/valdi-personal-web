@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 
-import { Card, CardBody, CardHeader } from '@nextui-org/card';
 import { Link } from '@nextui-org/link';
 
 import { TypeAnimation } from 'react-type-animation';
@@ -15,7 +14,7 @@ const Hero = () => {
       id='hero'
       className='w-full min-h-[calc(100dvh-4rem)] grid place-items-center'
     >
-      <div className='w-full flex flex-col gap-y-16 sm:gap-y-32'>
+      <div className='w-full flex flex-col gap-y-12'>
         <motion.div
           initial={false}
           animate={{
@@ -30,15 +29,17 @@ const Hero = () => {
           viewport={{
             once: true,
           }}
-          className='text-center mt-8 sm:m-0'
+          className='max-w-2xl'
         >
-          <h1 className='text-4xl font-extrabold mb-4'>
+          <p className='text-sm font-medium uppercase tracking-widest text-black/60 mb-4'>
+            {heroContent.header.subtext}
+          </p>
+
+          <h1 className='text-5xl sm:text-6xl font-extrabold leading-tight mb-6'>
             {heroContent.header.name}
           </h1>
-          {/* <p className='text-4xl font-bold'>{heroContent.header.subtext}</p> */}
 
-          {/* <p className='mt-4 text-lg'>{heroContent.header.description}</p> */}
-          <p className='mt-4 text-lg'>
+          <p className='text-lg text-black/70'>
             A passionate software engineer in{' '}
             <TypeAnimation
               sequence={[
@@ -53,107 +54,72 @@ const Hero = () => {
               ]}
               speed={50}
               repeat={Infinity}
-              className='underline font-medium'
+              className='underline font-medium text-foreground'
             />
             development.
           </p>
         </motion.div>
 
-        <div className='w-full mb-16 flex flex-col justify-between sm:flex-row-reverse'>
-          <motion.div
-            initial={false}
-            animate={{
-              opacity: 0,
-              transform: 'translateX(100%)',
-            }}
-            whileInView={{
-              opacity: 1,
-              transform: 'translateX(0)',
-            }}
-            transition={{
-              duration: 2,
-              ease: 'easeInOut',
-            }}
-            viewport={{
-              once: true,
-            }}
-            className='rounded-large transition-all hover:shadow-medium'
-          >
-            <Card
-              shadow='none'
-              className='w-full bg-transparent sm:max-w-sm p-2'
-            >
-              <CardHeader className='pb-0'>
-                <p className='font-semibold text-xl'>
-                  {heroContent.position.current.caption}
-                </p>
-              </CardHeader>
+        <motion.div
+          initial={false}
+          animate={{
+            opacity: 0,
+            translateY: 24,
+          }}
+          whileInView={{
+            opacity: 1,
+            translateY: 0,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.2,
+            ease: 'easeOut',
+          }}
+          viewport={{
+            once: true,
+          }}
+          className='mb-16 flex flex-col gap-8 border-t border-solid border-black/10 pt-8 sm:flex-row sm:gap-16'
+        >
+          <div className='flex-1'>
+            <p className='text-sm font-medium uppercase tracking-widest text-black/60 mb-2'>
+              {heroContent.position.current.caption}
+            </p>
 
-              <CardBody>
-                <p>
-                  {heroContent.position.current.description.pre}
-                  <Link
-                    href={heroContent.position.current.description.linkText.url}
-                    color='foreground'
-                    underline='always'
-                    isExternal
-                    showAnchorIcon
-                  >
-                    {heroContent.position.current.description.linkText.title}
-                  </Link>
-                  {heroContent.position.current.description.post}
-                </p>
-              </CardBody>
-            </Card>
-          </motion.div>
+            <p>
+              {heroContent.position.current.description.pre}
+              <Link
+                href={heroContent.position.current.description.linkText.url}
+                color='foreground'
+                underline='always'
+                isExternal
+                showAnchorIcon
+              >
+                {heroContent.position.current.description.linkText.title}
+              </Link>
+              {heroContent.position.current.description.post}
+            </p>
+          </div>
 
-          <motion.div
-            initial={false}
-            animate={{
-              opacity: 0,
-              transform: 'translateX(-100%)',
-            }}
-            whileInView={{
-              opacity: 1,
-              transform: 'translateX(0)',
-            }}
-            transition={{
-              duration: 2,
-              ease: 'easeInOut',
-            }}
-            viewport={{
-              once: true,
-            }}
-            className='rounded-large transition-shadow hover:shadow-medium'
-          >
-            <Card
-              shadow='none'
-              className='w-full bg-transparent sm:max-w-sm p-2'
-            >
-              <CardHeader className='pb-0'>
-                <p className='font-semibold text-xl'>
-                  {heroContent.position.past.caption}
-                </p>
-              </CardHeader>
+          <div className='flex-1'>
+            <p className='text-sm font-medium uppercase tracking-widest text-black/60 mb-2'>
+              {heroContent.position.past.caption}
+            </p>
 
-              <CardBody>
-                <p>
-                  {heroContent.position.past.description.pre}
-                  <Link
-                    href={heroContent.position.past.description.linkText.url}
-                    color='foreground'
-                    underline='always'
-                    isExternal
-                    showAnchorIcon
-                  >
-                    {heroContent.position.past.description.linkText.title}
-                  </Link>
-                  {heroContent.position.past.description.post}
-                </p>
-              </CardBody>
-            </Card>
-          </motion.div>
-        </div>
+            <p>
+              {heroContent.position.past.description.pre}
+              <Link
+                href={heroContent.position.past.description.linkText.url}
+                color='foreground'
+                underline='always'
+                isExternal
+                showAnchorIcon
+              >
+                {heroContent.position.past.description.linkText.title}
+              </Link>
+              {heroContent.position.past.description.post}
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
