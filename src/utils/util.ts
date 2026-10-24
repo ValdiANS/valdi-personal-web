@@ -3,7 +3,7 @@ const ICON_MAPPER: {
 } = {
   website: 'ph:globe-light',
   github: 'logos:github-icon',
-  gitlab: 'logos:gitlab',
+  gitlab: 'logos:gitlab-icon',
   lock: 'material-symbols:lock-outline',
 };
 
