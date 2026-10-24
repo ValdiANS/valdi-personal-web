@@ -2,6 +2,158 @@
   "title": "Featured Projects",
   "projects": [
     {
+      "logoUrl": "/assets/img/mbu-logo.png",
+      "name": "MBU Portal",
+      "subname": "Internal Portal",
+      "role": "Full-Stack Engineer",
+      "links": [
+        {
+          "caption": "GitLab",
+          "visibility": "private"
+        }
+      ],
+      "description": "Internal portal for a holding company in the agriculture industry. Involves many subsidiary companies in the poultry industry.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "React",
+          "Next.js",
+          "Daisy UI",
+          "Tailwind CSS",
+          "Git (GitLab)",
+          "Golang",
+          "PostgreSQL"
+        ]
+      }
+    },
+
+    {
+      "logoUrl": "/assets/img/mbu-logo.png",
+      "name": "Asset Management",
+      "role": "Full-Stack Engineer",
+      "links": [
+        {
+          "caption": "GitLab",
+          "visibility": "private"
+        }
+      ],
+      "description": "Asset Management System for a holding company in the agriculture industry.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "React",
+          "Next.js",
+          "Daisy UI",
+          "Tailwind CSS",
+          "Git (GitLab)",
+          "Golang",
+          "PostgreSQL"
+        ]
+      }
+    },
+
+    {
+      "logoUrl": "/assets/img/mas-logo.svg",
+      "name": "MAS RPA Presensi",
+      "subname": "Digital Attendance",
+      "role": "Full-Stack Engineer",
+      "links": [
+        {
+          "caption": "GitLab",
+          "visibility": "private"
+        }
+      ],
+      "description": "Digital attendance application for a slaughterhouse company in Bandung. Replaces manual attendance and helps the company to track the fulfillment of the needed manpower from workers sourced by manpower supply vendors.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "React",
+          "Next.js",
+          "Daisy UI",
+          "Tailwind CSS",
+          "Git (GitLab)",
+          "PostgreSQL"
+        ]
+      }
+    },
+
+    {
+      "logoUrl": "/assets/img/sankyossi-logo.png",
+      "name": "Sankyo Company Profile + CMS",
+      "subname": "Company profile and CMS",
+      "role": "Full-Stack Engineer",
+      "links": [
+        {
+          "caption": "GitHub",
+          "visibility": "private"
+        }
+      ],
+      "description": "Company profile and Content Management System for electronic distributor company.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "React",
+          "Next.js",
+          "Shadcn",
+          "Tailwind CSS",
+          "Github",
+          "PostgreSQL",
+          "Recharts",
+          "Framer Motion"
+        ]
+      }
+    },
+
+    {
+      "logoUrl": "/assets/img/nextgen-logo.png",
+      "name": "NextGen-Jinggu Himo",
+      "subname": "Digital Platform",
+      "role": "Front-End Engineer",
+      "links": [
+        {
+          "caption": "GitLab",
+          "visibility": "private"
+        }
+      ],
+      "description": "A digital platform by \"IBIMA Indonesia\" that supports workforce training, certification, and job placement for Indonesian professionals seeking careers in Japan.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "GitLab",
+          "Framer Motion"
+        ]
+      }
+    },
+
+    {
+      "logoUrl": "/assets/img/rgc-logo.svg",
+      "name": "Royal Gold Capital",
+      "subname": "Finance Investment Platform",
+      "role": "Front-End Engineer",
+      "links": [
+        {
+          "caption": "GitLab",
+          "visibility": "private"
+        }
+      ],
+      "description": "A finance-investment platform focused on “shop and earn” mechanics. The platform allows users to set purchase goals and gain rewards based on pre-agreed financial returns.",
+      "techStack": {
+        "caption": "Tech Used:",
+        "stacks": [
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "GitLab",
+          "Framer Motion",
+          "Ruby on Rails"
+        ]
+      }
+    },
+
+    {
       "logoUrl": "/assets/img/medease-logo.png",
       "name": "MedEase",
       "subname": "Self-Medication App",
